@@ -131,6 +131,7 @@ def main():
         global_config=global_config,
         workflow=(
             tasks.load_nox_module,
+            tasks.set_internal_options,
             tasks.discover_manifest,
             tasks.filter_manifest,
             tasks.honor_list_request,
